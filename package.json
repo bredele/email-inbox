@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Return email inbox URL based on a given email",
   "main": "dist/cjs/index.js",
+  "files": ["dist"],
   "exports": {
     "import": {
       "types": "./dist/index.d.ts",
@@ -21,20 +22,19 @@
     "typecheck": "tsc --noEmit",
     "test": "npm run build && node --test dist/cjs/src/index.test.js"
   },
-  "keywords": [
-    "email",
-    "inbox",
-    "url"
-  ],
+  "keywords": ["email", "inbox", "url"],
   "author": "Olivier Wietrich",
   "license": "MIT",
   "dependencies": {
-    "@bredele/email-provider": "^1.0.0"
+    "@bredele/email-provider": "^1.0.1"
   },
   "devDependencies": {
     "@swc/cli": "^0.7.7",
     "@swc/core": "^1.12.3",
     "@types/node": "^24.0.3",
     "typescript": "^5.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
