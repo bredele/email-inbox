@@ -16,7 +16,7 @@ import inbox from "@bredele/email-inbox";
 await inbox("hello@gmail.com");
 // => { provider: 'gmail', url: 'https://accounts.google.com/AccountChooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F%3Fauthuser%3Dhello%2540gmail.com&service=mail&Email=hello%40gmail.com'}
 
-await provider("hello@something-random.com");
+await inbox("hello@something-random.com");
 // => null
 ```
 
