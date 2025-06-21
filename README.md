@@ -5,7 +5,7 @@ Return email inbox URL based on a given email
 ## Installation
 
 ```sh
-$ npm install @bredele/email-inbox
+npm install @bredele/email-inbox
 ```
 
 ## Usage
