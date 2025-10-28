@@ -17,7 +17,10 @@ export default async (
  * Return email inbox URL and provider based on the provided email address.
  */
 
-const getInboxUrl = (providerName: string, email: string): string | void => {
+export const getInboxUrl = (
+  providerName: string,
+  email: string
+): string | void => {
   const user = encodeURIComponent(email.toLowerCase());
   switch (providerName) {
     case EMAIL_PROVIDER.GMAIL:
