@@ -1,6 +1,6 @@
 {
   "name": "@bredele/email-inbox",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Return email inbox URL based on a given email",
   "main": "./dist/cjs/index.js",
   "files": [
